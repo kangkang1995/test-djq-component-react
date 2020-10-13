@@ -1,0 +1,30 @@
+.svgMap{-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none;}
+svg line,svg polyline{
+shape-rendering: crispEdges;
+}
+.player{cursor: pointer;}
+.normalPlayer.hover{
+rect{
+  opacity:1!important;
+};
+text{
+  fill:#000!important;
+};
+}
+.groupPlayer.hover{
+rect{
+  opacity:1!important;
+};
+}
+text.quit{
+fill:#7D7D7D;
+text-decoration: line-through;
+}
+text.normal{
+fill:#b8babc;
+}
+.multi_exchange_choose{cursor: pointer;}
+.multi_exchange_sure{display: none; cursor: pointer;}
+text.exchange_text{
+display: none;
+}

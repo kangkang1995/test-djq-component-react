@@ -1,0 +1,203 @@
+.shadow{
+  // background:-moz-linear-gradient(top, unquote('#00000000'), #000000);
+  // background: -webkit-linear-gradient(top, unquote('#00000000'),#000000);
+  // background: -o-linear-gradient(top, unquote('#00000000') 0%,#000000 100%);
+  // background: -ms-linear-gradient(top, unquote('#00000000') 0%,#000000 100%);
+  // background: linear-gradient(to bottom, unquote('#00000000'),#000000);
+  background-image: url('./shadow.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.atomic-content{
+  position: relative;
+  &.hover{
+    border: 1px dashed #ff5454;
+    .hover-view{
+      display: block;
+      @extend .shadow
+    }
+  }
+  .hover-view{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display: none;
+    color:white;
+    i{
+      margin-right: 5px;
+    }
+    >.des-box{
+      position: absolute;
+      left:0;
+      bottom:0;
+      padding:5px 10px;
+    }
+    >.delete-box{
+      position: absolute;
+      right:0;
+      bottom:0;
+      padding:5px 10px;
+    }
+  }
+  .build-image{
+    display: inline-block;
+    position: relative;
+    margin: 5px;
+    box-shadow: 0 0 5px #000;
+    >.masking-box{
+      position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      @extend .shadow;
+      color:white;
+      >.loading-view{
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+        .ant-progress-circle .ant-progress-text{
+          color:white
+        }
+      }
+      >.reload-view{
+        i{
+          font-size: 50px;
+        }
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+      }
+    }
+  }
+  .build-equip{
+    h1,h2,figcaption {
+      display: flex;
+    }
+    .cz-content{
+      display: inline-flex;
+      width: 100%;
+      text-align: center;
+      >dl{
+        flex:1;
+        dt{
+          font-size: 14px;
+        }
+        img{
+          width: 50px;
+          height: 50px;
+          border-radius: 25px;
+        }
+      }
+    }
+    .xxhc-content{
+      >dl {
+        width: 100px;
+        display: inline-block;
+        dt {
+          font-size: 14px;
+        }
+        img {
+          width: 30px;
+          height: 30px;
+          border-radius: 15px;
+        }
+      }
+    }
+  }
+}
+.inputBoxMeng {
+  background:rgba(0, 0, 0, 0.5);
+  width:100%;
+  height:100%; 
+  justify-content:center;
+  align-items:center;
+  position: fixed;;
+  top:0;
+  left:0;
+}
+
+.imageBox {
+  position: relative;
+  // .inputBoxBox {
+  //   width: 100%;
+  //   height: 100%;
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   z-index: 111;
+  // }
+  .inputBox {
+    position: absolute;
+    width:90%;
+    height:160px; 
+    background: #fff;
+    border-radius: 15px;
+    max-width: 300px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    .title {
+      margin-top: 20px;
+    }
+    input {
+      width: 90%;
+      margin-top: 20px;
+    }
+    .option {
+      flex: 1;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      margin-top: 2%;
+      justify-content: flex-end;
+      position: absolute;
+      bottom: 20px;
+      >div {
+        background: #fff;   
+        margin-right: 5%;
+        border: 1px solid #aeaeae;
+        padding: 0 10px;
+        border-radius: 5px;
+      }
+      .handOk {
+        background: #1890ff
+      }
+    }
+  }
+}
+// .djq-editor-header {
+//   .title {
+//     width: 30px;
+//     height: 30px;
+//     display: inline-block;
+//     background-size: 100% 100%;
+//   }
+//   .bigT {
+//     background-image: url('../images/btitle.png');
+//   }
+//   .smallT {
+//     background-image: url('../images/stitle.png');
+//   }
+// }
+
+// 视频
+.atomic-video-id{
+  width: 100%;
+  // height: 80px;
+  // line-height: 78px;
+  text-align: center;
+  padding: 20px 0;
+  border: 1px solid #ccc;
+  background-color: #000;
+  color: white;
+  font-size: 20px;
+}

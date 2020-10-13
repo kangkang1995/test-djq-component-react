@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "outDir": "build",
+    "target": "es5",
+    "downlevelIteration":true,
+    "jsx": "react",
+    "lib":["dom","es6","es2015.promise","es2017"],
+    "sourceMap": true
+  },
+  "include": [
+    "src/component"
+  ]
+}

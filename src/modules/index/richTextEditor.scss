@@ -1,0 +1,31 @@
+#app{
+  height: 100%
+}
+.editor-box{
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  .editor-title{
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    display: inline-flex;
+    display: -webkit-inline-flex;
+    >textarea{
+      resize:none;
+      padding: 0;
+      border: 0;
+      font-size: 18px;
+      outline:none;
+      font-weight: 500;
+      caret-color: #ff5454;
+      &:active{
+        border: 0;
+      }
+      &:focus{
+        box-shadow: none;
+      }
+    }
+  }
+}

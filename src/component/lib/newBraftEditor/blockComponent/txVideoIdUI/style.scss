@@ -1,0 +1,37 @@
+// 视频
+.djq-tx-video{
+  text-align: center;
+  .djq-tx-video-id{
+    width: 100%;
+    padding: 20px 0;
+    border: 1px solid #ccc;
+    background-color: #000;
+    color: white;
+    font-size: 20px;
+  }
+
+  .djq-braft-video-description{
+    text-align: center;
+    span{
+      display: inline-block;
+      position: relative;
+      &::before{
+        content: " ";
+        position: absolute;
+        left: 0;
+        top: 4px;
+        width: 4px;
+        height: 10px;
+        background-color: #ff5454;
+      }
+      max-width: 100%;
+      margin: 0 auto;
+      // border-left: 5px solid #ff5454;
+      padding-left: 8px;
+      text-align: left;
+      font-size: 12px;
+      color: #7D7D7D;
+    }
+  }
+  
+}
